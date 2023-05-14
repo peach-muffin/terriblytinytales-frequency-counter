@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/terriblytinytales-frequency-counter/static/css/main.75f82498.css",
+    "main.js": "/terriblytinytales-frequency-counter/static/js/main.0c7d289f.js",
+    "static/js/787.b9d02baa.chunk.js": "/terriblytinytales-frequency-counter/static/js/787.b9d02baa.chunk.js",
+    "index.html": "/terriblytinytales-frequency-counter/index.html",
+    "main.75f82498.css.map": "/terriblytinytales-frequency-counter/static/css/main.75f82498.css.map",
+    "main.0c7d289f.js.map": "/terriblytinytales-frequency-counter/static/js/main.0c7d289f.js.map",
+    "787.b9d02baa.chunk.js.map": "/terriblytinytales-frequency-counter/static/js/787.b9d02baa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75f82498.css",
+    "static/js/main.0c7d289f.js"
+  ]
+}
