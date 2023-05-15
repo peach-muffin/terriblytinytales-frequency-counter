@@ -11,60 +11,44 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+>## Depoly
+>This Website is deployed on Github, link is as follows:
+>[React App (peach-muffin.github.io)](https://peach-muffin.github.io/terriblytinytales-frequency-counter/)
 
-### `npm test`
+# FetchData Component
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> There is a React component called `FetchData` that retrieves data from a remote server, counts word frequency in the data, and displays the word frequency as well as a bar chart representing the top 20 most frequently occurring words.
+>## Installation
+>To use this component in your React application, follow these steps:
 
-### `npm run build`
+>1.  Install the required dependencies by running the following command:
+>`npm install recharts`
+>2.  Create a new file named `FetchData.js` and copy the component code into it.
+    
+>3.  Import the component in your desired location:
+>## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+>The `FetchData` component a that, clicked, data from the specified URL (`https://www.terriblytinytales.com/test.txt`). After fetching the data, it counts the word frequency, generates a word frequency histogram, and allows the user to export the histogram data as a CSV file.
+>## Component Details
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+>The `FetchData` component is implemented using React hooks. It maintains the following state variables:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+>-   `isOpen1`: Represents the visibility of the word frequency section.
+>-   `isOpen2`: Represents the visibility of the word frequency histogram section.
+>-   `histogramData`: Stores the data for the word frequency histogram.
+>-   `wordFrequency`: Stores the word frequency count.
+>-   `isFetching`: Indicates whether data is being fetched.
+>-   `isDataFetched`: Indicates whether data has been fetched successfully.
 
-### `npm run eject`
+>The component provides two functions to toggle the visibility of the sections: `toggle1` and `toggle2`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+>The component also includes the following helper functions:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+>-   `fetchData`: Fetches data from the specified URL, counts word frequency, and updates the state variables accordingly.
+>-   `countWords`: Counts the frequency of words in a given text.
+>-   `sortWordsByCount`: Sorts the words based on their frequency count.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+>Additionally, the component provides an `exportToCSV` function to export the histogram data as a CSV file.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+>The word frequency section displays a list of words and their respective frequencies.
+>The word frequency histogram section displays a bar chart using the `BarChart` component from the `recharts` library.
