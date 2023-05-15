@@ -11,7 +11,7 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Depoly
+## Deploy
 This Website is deployed on Github, link is as follows:
 [React App (peach-muffin.github.io)](https://peach-muffin.github.io/terriblytinytales-frequency-counter/)
 
